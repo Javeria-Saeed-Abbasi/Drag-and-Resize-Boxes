@@ -19,7 +19,7 @@ let arr = [];
   function addBtn() {
   
     var newBox = $(
-      ` <label class="checkbox ui-sortable-handle"><div class="box ui-draggable ui-draggable-handle ui-resizable" id="box${selectId}" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="return getBtnId('b${selectId}')"> <input type="checkbox"class="five"><div class="item" id="item${selectId}"><button id="b${selectId}" onclick="return checkValue("b${selectId})">Button${selectId}</button></div></input></div></label>`,
+      `<div class="checkbox box ui-draggable ui-draggable-handle ui-resizable ui-sortable-handle" id="box${selectId}" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="return getBtnId('b${selectId}')"> <input type="checkbox"class="five"><div class="item" id="item${selectId}"><button id="b${selectId}" onclick="return checkValue("b${selectId})">Button${selectId}</button></div></div>`,
     )
     var newBoxId = $(newBox).attr("id", "box"+selectId++).draggable().resizable();
     $('.box-left').append(newBoxId);

@@ -108,6 +108,7 @@ input:checked + label .check {
 input.checkbox:checked + label:before {
     content: "";
 }
+
 @media only screen and (max-width: 1366px){
     .wrapper .left-box{
         width: 100%;
